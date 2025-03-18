@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The MEAN Stack</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cynthia Sosa: <%= name %></h1>
+    <h2><%= title %></h2>
+    <ul>
+        <% definitions.forEach(function(definition) { %>
+            <li><strong><%= definition.name %></strong>: <%= definition.description %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>
